@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/5968/5968852.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style> .fixed-sidebar { position: fixed; left: 0; top: 50px; bottom: 0; overflow-y: auto; } 
+    .relative-sidebar {
+        position: fixed;
+        top:3.5rem; /* Add unit */
+        left: 18rem;
+        right: 0;
+        bottom: 0;
+        overflow-y: auto; /* Enables scrolling */
+        max-height: 100vh; /* Ensures the sidebar does not exceed viewport height */
+    }    
+</style>
+</head>
+<body>
+
+<header>
+    <nav class="flex pt-5 items-center bg-fixed">
+        <div class="pl-6 flex"><img src="./menu-bar.png" alt="menu"> <img src="./Logo.png" alt="yticon" class="pl-5"></div>
+        <div class="pl-9 w-3/4 flex ml-60"><input type="text" placeholder=" Search" class="border rounded ml-6 w-2/4 "><button class="border rounded bg-dark-900 p-2"><img src="./search.png" alt="img" class="pl-2"></button></div>
+        <div class="flex">
+            <img src="./Create.png" alt="log1" class="pr-5">
+            <img src="./Chocolate.png" alt="dot" class="pr-5">
+            <img src="./Group.png" alt="bell" class="pr-5">
+        </div>
+        <div>
+            <img src="./Profile Photo.png" alt="profile" class=" ml-20 mr-20">
+        </div>
+    </nav>
+</header>
+
+<main class="flex">
+    <sections class="fixed-sidebar ml-4 bg-[#fff] overflow-scroll-y">
+        <!-- <div class="pt-2">
+           <img src="./Sidebar.png" alt="img" class="bg-scroll">
+        </div> -->
+        <div class="flex-col h-100vh font-sans">
+            <ul class="mt-1rem">
+                <li class="flex items-center  rounded mt-0.5 h-10 w-56 hover:bg-gray-400"> <img src="https://cdn-icons-png.flaticon.com/128/1946/1946488.png" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-bold text-[1.2rem] ml-4 hover:bg-gray-400"> Home</a></li>
+                <li class="flex items-center mt-0.5 h-10 w-56 hover:bg-gray-400"> <img src="https://img.icons8.com/?size=96&id=ot8QhAKun4rZ&format=png" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-bold text-[1.2rem] ml-4 hover:bg-gray-400">Shorts</a></li>
+                <li class="flex items-center mt-0.5 h-10 w-56 hover:bg-gray-400"> <img src="https://img.icons8.com/?size=32&id=I-Si3hah4sLE&format=png" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-bold text-[1.2rem] ml-4 hover:bg-gray-400">Subscriptions</a></li>
+            </ul>
+        </div>
+        <div class="ml-0">_______________________________</div>
+        <div class="flex-col h-100vh font-sans">
+            <ul class="mt-1rem">
+                <li class="flex items-center mt-0.5 h-10 w-56"><a href="#" class="bg-[#fff] font-bold text-[1.2rem]">You ></a></li>
+                <li class="flex items-center mt-0.5 h-10 w-56"> <img src="https://cdn-icons-png.flaticon.com/128/3503/3503786.png" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-medium text-[1rem] ml-4">History</a></li>
+                <li class="flex items-center mt-0.5 h-10 w-56"> <img src="https://cdn-icons-png.flaticon.com/128/4043/4043797.png" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-medium text-[1rem] ml-4">Playlists</a></li>
+                <li class="flex items-center mt-0.5 h-10 w-56"> <img src="https://cdn-icons-png.flaticon.com/128/2991/2991195.png" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-medium text-[1rem] ml-4"> Your Videos</a></li>
+                <li class="flex items-center mt-0.5 h-10 w-56"> <img src="https://cdn-icons-png.flaticon.com/128/9720/9720911.png" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-medium text-[1rem] ml-4"> Your Courses</a></li>
+                <li class="flex items-center mt-0.5 h-10 w-56"> <img src="https://cdn-icons-png.flaticon.com/128/15476/15476736.png" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-medium text-[1rem] ml-4"> Watch Later</a></li>
+                <li class="flex items-center mt-0.5 h-10 w-56"> <img src="https://cdn-icons-png.flaticon.com/128/16739/16739365.png" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-medium text-[1rem] ml-4"> Liked Videos</a></li>
+                <li class="flex items-center mt-0.5 h-10 w-56"> <img src="https://cdn-icons-png.flaticon.com/128/3502/3502477.png" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-medium text-[1rem] ml-4"> Downloads</a></li>
+                <li class="flex items-center mt-0.5 h-10 w-56"> <img src="https://cdn-icons-png.flaticon.com/128/8838/8838905.png" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-medium text-[1rem] ml-4"> Your Clips</a></li>
+            </ul>
+        </div>
+<div class="ml-0">_______________________________</div>
+         <div class="flex-col h-100vh font-sans">
+            <ul class="mt-1rem">
+                <li class="flex items-center mt-0.5 h-10 w-56"><a href="#" class="bg-[#fff] font-bold text-[1.2rem]">Subscriptions</a></li>
+                <li class="flex items-center mt-0.5 h-10 w-56"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Physics_wallah_logo.jpg/120px-Physics_wallah_logo.jpg?20211017183441" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-medium text-[1.2rem] ml-4">Physics Wallah</a></li>
+                <li class="flex items-center mt-0.5 h-10 w-56"> <img src="https://yt3.googleusercontent.com/4jUKl9l95aGK6KhaS-ca-NGL8PCj8XCFJ4gIPzDOtAVF8ICwx1HB8-Z0QfrABjw9mzVs8g9IRQ=s160-c-k-c0x00ffffff-no-rj" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-medium text-[1.2rem] ml-4">College Wallah</a></li>
+                <li class="flex items-center mt-0.5 h-10 w-56"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfWoBmyQ7kKfEGEqo3lwbSTef-BFk-NXMm31EIn0sIHt-n8_eJUtlx&usqp=CAE&s" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-medium text-[1.2rem] ml-4">Alakh Pandey</a></li>
+                <li class="flex items-center mt-0.5 h-10 w-56"> <img src="https://yt3.ggpht.com/Iog6TSs3j8lj6Cl6fmWVVxSMO6_rnOMnVYE7Fvu7AxT6woqBM9g7O306_Z9o7XDX1y-upGuHgSk=s120-c-k-c0x00ffffff-no-rj" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-medium text-[1.2rem] ml-4">Knowledge-Tech(KT)</a></li>
+            </ul>
+        </div>
+<div class="ml-0">_______________________________</div>
+        <div class="flex-col h-100vh font-sans">
+            <ul class="mt-1rem">
+                <li class="flex items-center mt-0.5 h-10 w-56"><a href="#" class="bg-[#fff] font-bold text-[1.2rem]">Explore</a></li>
+                <li class="flex items-center mt-0.5 h-10 w-56"> <img src="https://cdn-icons-png.flaticon.com/128/1946/1946432.png" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-bold text-[1rem] ml-4">Trending</a></li>
+                <li class="flex items-center mt-0.5 h-10 w-56"> <img src="https://cdn-icons-png.flaticon.com/128/4903/4903482.png" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-bold text-[1rem] ml-4">Shopping</a></li>
+                <li class="flex items-center mt-0.5 h-10 w-56"> <img src="https://cdn-icons-png.flaticon.com/128/461/461238.png" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-bold text-[1rem] ml-4">Music</a></li>
+                <li class="flex items-center mt-0.5 h-10 w-56"> <img src="https://cdn-icons-png.flaticon.com/128/11352/11352690.png" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-bold text-[1rem] ml-4">Films</a></li>
+                <li class="flex items-center mt-0.5 h-10 w-56"> <img src="https://cdn-icons-png.flaticon.com/128/8191/8191668.png" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-bold text-[1rem] ml-4">Live</a></li>
+                <li class="flex items-center mt-0.5 h-10 w-56"> <img src="https://cdn-icons-png.flaticon.com/128/18086/18086014.png" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-bold text-[1rem] ml-4">Gaming</a></li>
+                <li class="flex items-center mt-0.5 h-10 w-56"> <img src="https://cdn-icons-png.flaticon.com/128/11918/11918368.png" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-bold text-[1rem] ml-4">News</a></li>
+                <li class="flex items-center mt-0.5 h-10 w-56"> <img src="https://cdn-icons-png.flaticon.com/128/2931/2931307.png" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-bold text-[1rem] ml-4">Sport</a></li>
+                <li class="flex items-center mt-0.5 h-10 w-56"> <img src="https://cdn-icons-png.flaticon.com/128/9720/9720860.png" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-bold text-[1rem] ml-4">Courses</a></li>
+                <li class="flex items-center mt-0.5 h-10 w-56"> <img src="https://cdn-icons-png.flaticon.com/128/2684/2684489.png" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-bold text-[1rem] ml-4">Fashion & beauty</a></li>
+                <li class="flex items-center mt-0.5 h-10 w-56"> <img src="https://cdn-icons-png.flaticon.com/128/18393/18393935.png" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-bold text-[1rem] ml-4">Podcasts</a></li>
+            </ul>
+        </div>
+        <div class="ml-0">_______________________________</div>
+
+        <div class="flex-col h-100vh font-sans">
+            <ul class="mt-1rem">
+                <li class="flex items-center mt-0.5 h-10 w-56"><a href="#" class="bg-[#fff] font-bold text-[1.2rem]">More from YouTube</a></li>
+                <li class="flex items-center mt-0.5 h-10 w-56"> <img src="https://cdn-icons-png.flaticon.com/128/1384/1384060.png" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-bold text-[1rem] ml-4">YouTube Premium</a></li>
+                <li class="flex items-center mt-0.5 h-10 w-56"> <img src="https://static.vecteezy.com/system/resources/previews/017/396/826/non_2x/youtube-studio-icons-free-png.png" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-bold text-[1rem] ml-4">YouTube Studio</a></li>
+                <li class="flex items-center mt-0.5 h-10 w-56"> <img src="https://cdn-icons-png.flaticon.com/128/16592/16592511.png" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-bold text-[1rem] ml-4">YouTube Music</a></li>
+                <li class="flex items-center mt-0.5 h-10 w-56"> <img src="https://cdn-icons-png.flaticon.com/128/720/720320.png" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-bold text-[1.2rem] ml-4">YouTube Kids</a></li>
+            </ul>
+        </div>
+        <div class="ml-0">_______________________________</div>
+        <div class="flex-col h-100vh font-sans">
+            <ul class="mt-1rem">
+                <li class="flex items-center mt-0.5 h-10 w-56"> <img src="https://cdn-icons-png.flaticon.com/128/2040/2040504.png" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-medium text-[1rem] ml-4"> Settings</a></li>
+                <li class="flex items-center mt-0.5 h-10 w-56"> <img src="https://cdn-icons-png.flaticon.com/128/2958/2958792.png" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-medium text-[1rem] ml-4">Report History</a></li>
+                <li class="flex items-center mt-0.5 h-10 w-56"> <img src="https://cdn-icons-png.flaticon.com/128/471/471664.png" alt="img" class="h-5 w-5 text-[#000]"><a href="https://www.youtube.com/" class="bg-[#fff] font-medium text-[1rem] ml-4">Help</a></li>
+            </ul>
+        </div>
+        <div class="ml-0">_______________________________</div>
+
+        <footer>
+            <p class="font-sans text-[0.9rem]">About Press Copyright
+                <br>
+                Contact us Creator Advertise
+                <br>
+                Developers
+                <br>
+                <br>
+                Terms Privacy Policy & Safety
+                <br>
+                How YouTube works
+                <br>
+                Test new features
+                <br><br>
+                &copy;225 Google LLC
+            </p>
+        </footer>
+
+        
+    </sections>
+    <section class="relative-sidebar ml-50">
+        <div class="mt-3 overflow-x-auto fixed flex-nowrap mr-5 bg-[#fff] py-3">
+            <button class="border  rounded px-1.5 bg-[#808080] mr-2">All</button>
+            <button class="border  rounded px-1.5 bg-[#808080] mr-2">Disha Vakani</button>
+            <button class="border  rounded px-1.5 bg-[#808080] mr-2">Live</button>
+            <button class="border  rounded px-1.5 bg-[#808080] mr-2">India national cricket team</button>
+            <button class="border  rounded px-1.5 bg-[#808080] mr-2">Music</button>
+            <button class="border  rounded px-1.5 bg-[#808080] mr-2">Motu Patlu</button>
+            <button class="border  rounded px-1.5 bg-[#808080] mr-2">Awards</button>
+            <button class="border  rounded px-1.5 bg-[#808080] mr-2">Data Structures</button>
+            <button class="border  rounded px-1.5 bg-[#808080] mr-2">Akshay Kumar</button>
+            <button class="border  rounded px-1.5 bg-[#808080] mr-2">Mixes</button>
+            <button class="border  rounded px-1.5 bg-[#808080] mr-2">SunnyLeone</button>   
+        </div>
+
+        <div class="mt-14">
+            <img src="./Cards.png" alt="">
+        </div>
+       
+    </section>
+</main>
+    
+</body>
+</html>
